@@ -91,7 +91,7 @@
               v-for="item in dateScopes"
               :key="item.id"
               :label="item.des"
-              :value="item.id"
+              :value="item.des"
             />
           </el-select>
         </el-form-item>

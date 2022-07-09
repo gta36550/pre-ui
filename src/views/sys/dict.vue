@@ -15,14 +15,7 @@
         <el-option v-for="item in queryTypeOptions" :key="item.key" :label="item.display_name" :value="item.key" />
       </el-select>
       <el-button class="filter-item" size="small" type="primary" icon="el-icon-search" plain>搜索</el-button>
-      <el-button
-        class="filter-item"
-        size="small"
-        type="primary"
-        icon="el-icon-plus"
-        @click="handleAdd"
-      >新增
-      </el-button>
+      <el-button class="filter-item" size="small" type="primary" icon="el-icon-plus" @click="handleAdd">新增</el-button>
     </div>
     <!--表格渲染-->
     <el-table v-loading="loading" :data="data" border style="width: 100%;">

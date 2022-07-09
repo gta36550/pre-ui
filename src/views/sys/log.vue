@@ -149,7 +149,7 @@ export default {
       const params = new URLSearchParams()
       params.append('page', this.currentPage)
       params.append('pageSize', this.pageSize)
-      params.append('type', 1)
+      params.append('type', 0)
       params.append('userName', this.keyword)
       getLogList(params).then(response => {
         this.loading = false
